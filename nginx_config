@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    access_log /var/log/nginx/dashboard-access.log;
+    error_log /var/log/nginx/dashboard-error.log;
+
+    location /dashboard/ {
+        proxy_pass http://0.0.0.0:8050/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}

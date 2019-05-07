@@ -1,0 +1,10 @@
+plotly
+dash
+dash-bootstrap-components
+pandas
+numpy
+pymongo
+mysql-connector-python
+opencv-python
+Flask-Caching
+

@@ -1,0 +1,5 @@
+**.log
+**/cache-directory
+__pycache__/
+**csv
+
